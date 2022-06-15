@@ -11,14 +11,12 @@ namespace EnviaEmailSmtp
     {
         static async Task Main(string[] args)
         {
-
             Console.WriteLine("Inicio da aplicação de teste envio de email.");
 
-            EnviaEmailService enviandoEmail = new EnviaEmailService();
+            var enviandoEmail = new EnviaEmailService();
             await enviandoEmail.EnviarEmail();
 
             Console.WriteLine("Fim da aplicação de teste envio de email.");
-
         }
     }
 }
